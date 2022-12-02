@@ -8,7 +8,7 @@ const coin = data.value[0]
 </script>
 
 <template>
-  <div>
+  <div class="container flex h-screen">
     <h2>{{ coin.name }}</h2>
     <table>
       <thead>
