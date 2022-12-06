@@ -9,7 +9,7 @@ const { data } = await useFetch('/api/global')
     <div class="grid grid-cols-3 border-t border-t-gray-300 pt-4 w-5/6">
       <div class="flex flex-col items-center border-r border-r-gray-300">
         <p class="text-4xl font-bold">{{ new Intl.NumberFormat().format(data[0].coins_count) }}</p>
-        <p class="text-sm">Coins</p>
+        <p class="text-sm">Total Coins</p>
       </div>
       <div class="flex flex-col items-center border-r border-r-gray-300">
         <p class="text-4xl font-bold">{{ new Intl.NumberFormat().format(data[0].active_markets) }}</p>
