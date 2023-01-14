@@ -8,21 +8,22 @@ const coin = data.value[0]
 </script>
 
 <template>
-  <div class="container flex h-screen">
-    <h2>{{ coin.name }}</h2>
-    <table>
-      <thead>
-        <th>Symbol</th>
-        <th>Rank</th>
-        <th>Price - US $</th>
-        <th>Market Cap - US $</th>
-      </thead>
-      <tr>
-        <td>{{ coin.symbol }}</td>
-        <td>{{ coin.rank }}</td>
-        <td>{{ coin.price_usd }}</td>
-        <td>{{ coin.market_cap_usd }}</td>
-      </tr>
-    </table>
+  <div class="flex flex-col h-screen mt-8 text-gray-50">
+    <h2 class="text-2xl text-center">{{ coin.name }} - {{ coin.symbol }}</h2>
+    <div class="flex flex-col text-center items-center">
+      <div class="my-4 pb-8 space-y-4 border-b border-gray-50 w-5/6">
+        <span class="text-5xl">{{ coin.rank }}</span>
+        <p class="text-xs">Rank</p>
+      </div>
+      <div class="my-4 pb-8 space-y-4 border-b border-gray-50 w-5/6">
+        <div class="text-5xl">{{ new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD'}).format(coin.price_usd) }}</div>
+        <p class="text-xs">Price - USD</p>
+      </div>
+      <div class="my-4 pb-8 space-y-4 border-b border-gray-50 w-5/6">
+        <div class="text-5xl">{{ new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', notation: 'compact' }).format(coin.market_cap_usd) }}</div>
+        <p class="text-xs">Market Cap - USD</p>
+      </div>
+    </div>
+
   </div>
 </template>
