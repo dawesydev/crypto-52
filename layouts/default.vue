@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gradient-to-br from-sky-500 to-indigo-500">
+  <div class="bg-gradient-to-br from-sky-500 to-indigo-600">
     <nav class="flex flex-col items-center pt-20">
       <NuxtLink to="/" class="title-bold text-5xl tracking-wides font-bold text-gray-100 uppercase">Crypto<span class="">52</span></NuxtLink>
     </nav>

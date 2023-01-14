@@ -27,7 +27,7 @@ const { data } = await useFetch('/api/tickers?limit=10')
 <!--        <div class="table-cell">{{ currency.symbol }}</div>-->
         <div class="table-cell">{{ currency.name }}</div>
         <div class="table-cell">{{ new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD'}).format(currency.price_usd) }}</div>
-        <div :class="currency.percent_change_24h > 0 ? 'text-emerald-400' : 'text-rose-700'" class="table-cell text-center">{{ currency.percent_change_24h }}%</div>
+        <div :class="currency.percent_change_24h > 0 ? 'text-emerald-300' : 'text-rose-300'" class="table-cell text-center">{{ currency.percent_change_24h }}%</div>
         <div class="table-cell text-center">
           <NuxtLink :to="/currency/ + currency.id" class="px-2 py-1 bg-gray-100 bg-opacity-25 rounded text-gray-50 sm:text-sm hover:bg-opacity-50">View</NuxtLink>
         </div>

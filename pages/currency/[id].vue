@@ -20,7 +20,7 @@ const coin = data.value[0]
         <p class="text-xs">Price - USD</p>
       </div>
       <div class="py-8 space-y-4 border-x border-gray-50 w-5/6 md:w-2/3 bg-gray-100 bg-opacity-25">
-        <div :class="coin.percent_change_1h > 0 ? 'text-emerald-300' : 'text-rose-700'" class="text-5xl">{{ coin.percent_change_1h }}%</div>
+        <div :class="coin.percent_change_1h > 0 ? 'text-emerald-300' : 'text-rose-300'" class="text-5xl">{{ coin.percent_change_1h }}%</div>
         <p class="text-xs">1H Change</p>
       </div>
       <div class="py-8 space-y-4 border border-gray-50 w-5/6 md:w-2/3 rounded-b-2xl bg-gray-100 bg-opacity-25">
@@ -29,8 +29,8 @@ const coin = data.value[0]
       </div>
     </div>
     <div class="flex justify-center space-x-6 mt-8">
-      <NuxtLink to="/" class="text-amber-700 py-1 px-2 bg-amber-200 bg-opacity-90 rounded drop-shadow">Trade {{ coin.name }}</NuxtLink>
-      <NuxtLink to="/" class="text-gray-700 py-1 px-2 bg-gray-200 bg-opacity-90 rounded drop-shadow">View All</NuxtLink>
+      <NuxtLink to="/" class="text-amber-700 py-1 px-2 bg-amber-200 bg-opacity-90 rounded drop-shadow hover:">Trade {{ coin.name }}</NuxtLink>
+      <NuxtLink to="/" class="text-gray-700 py-1 px-2 bg-gray-200 bg-opacity-90 rounded drop-shadow hover:">View All</NuxtLink>
     </div>
   </div>
 </template>
