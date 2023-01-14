@@ -6,7 +6,7 @@ const { data } = await useFetch('/api/tickers?limit=10')
 </script>
 
 <template>
-  <div class="container flex justify-center w-4/6 md:w-2/3 mt-4 mb-28">
+  <div class="container flex justify-center w-4/6 md:w-2/3 mt-4 mb-12 md:mb-28">
     <div class="text-gray-300 text-xs">Last updated: {{ new Date(data.info.time * 1000).toLocaleString('en-GB', { timeZone: 'GMT' }) }} GMT</div>
   </div>
   <div class="table text-xs sm:text-lg w-11/12 md:w-2/3 text-gray-100">
