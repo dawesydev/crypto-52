@@ -5,7 +5,7 @@ const { data } = await useFetch('/api/global')
 </script>
 
 <template>
-  <div class="flex font-display w-full justify-center mt-4 md:mt-36">
+  <div class="flex min-h-fit font-display w-full justify-center mt-4 md:mt-36">
     <div class="w-11/12 md:grid md:grid-cols-3 md:border-t md:border-t-gray-300 md:pt-4 md:w-5/6">
       <div class="flex flex-col items-center space-y-2 mt-4 md:border-r md:border-r-gray-300">
         <p class="text-4xl font-bold">{{ new Intl.NumberFormat().format(data[0].coins_count) }}</p>
