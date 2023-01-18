@@ -7,9 +7,9 @@ const { data } = await useFetch('/api/tickers?limit=10')
 
 <template>
   <div class="container flex justify-center w-4/6 md:w-2/3 mt-4 mb-12 md:mb-28">
-    <div class="text-gray-300 text-xs">Last updated: {{ new Date(data.info.time * 1000).toLocaleString('en-GB', { timeZone: 'GMT' }) }} GMT</div>
+    <div class="text-gray-300 text-xs font-body">Last updated: {{ new Date(data.info.time * 1000).toLocaleString('en-GB', { timeZone: 'GMT' }) }} GMT</div>
   </div>
-  <div class="table text-xs sm:text-lg w-11/12 md:w-2/3 text-gray-100">
+  <div class="table font-body tracking-wider text-xs sm:text-lg w-11/12 md:w-2/3 text-gray-100">
 <!--  <div class="table text-xs sm:text-lg w-11/12 md:w-2/3 bg-white p-5 rounded-xl bg-opacity-50 backdrop-filter backdrop-blur-lg text-gray-700">-->
     <div class="table-header-group">
       <div class="table-row font-bold">

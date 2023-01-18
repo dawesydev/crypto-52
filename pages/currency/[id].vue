@@ -8,7 +8,7 @@ const coin = data.value[0]
 </script>
 
 <template>
-  <div class="flex flex-col h-screen mt-8 text-gray-50">
+  <div class="flex font-body tracking-wide flex-col h-screen mt-8 text-gray-50">
     <h2 class="text-2xl text-center mb-8">{{ coin.name }} - {{ coin.symbol }}</h2>
     <div class="flex flex-col text-center items-center drop-shadow">
       <div class="py-8 space-y-4 border border-gray-50 w-5/6 md:w-2/3 rounded-t-2xl bg-gray-100 bg-opacity-25">
@@ -30,7 +30,7 @@ const coin = data.value[0]
     </div>
     <div class="flex justify-center space-x-6 mt-8">
       <NuxtLink to="/" class="text-amber-700 py-1 px-2 bg-amber-200 bg-opacity-90 rounded drop-shadow hover:">Trade {{ coin.name }}</NuxtLink>
-      <NuxtLink to="/" class="text-gray-700 py-1 px-2 bg-gray-200 bg-opacity-90 rounded drop-shadow hover:">View All</NuxtLink>
+      <NuxtLink to="/" class="text-gray-700 py-1 px-2 bg-gray-200 bg-opacity-90 rounded drop-shadow hover:">Show all coins</NuxtLink>
     </div>
   </div>
 </template>

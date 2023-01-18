@@ -15,7 +15,7 @@ const { data } = await useFetch('/api/global')
   <main class="h-screen text-gray-100">
     <div class="flex flex-col items-center place-content-between">
       <div class="flex flex-col items-center">
-        <h1 class="title-reg text-3xl tracking-wide">Global Data Dashboard</h1>
+        <h1 class="font-display text-3xl tracking-wide">Global Data Dashboard</h1>
       </div>
 
       <CryptoTable />
