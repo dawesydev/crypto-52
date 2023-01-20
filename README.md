@@ -1,4 +1,4 @@
-# Crypto Dashboard
+# Crypto52
 
 Simple overview of use/purpose.
 
