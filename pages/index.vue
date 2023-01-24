@@ -2,12 +2,6 @@
 import {useFetch} from "nuxt/app";
 
 const { data } = await useFetch('/api/global')
-// import CryptoStats from "../components/CryptoStats";
-
-// const { data } = await useFetch('/api/tickers?limit=20')
-// const { data } = await useFetch('/api/global')
-
-// const { tickers } = await useFetch('/api/tickers?limit=1')
 
 </script>
 
@@ -21,28 +15,6 @@ const { data } = await useFetch('/api/global')
       <CryptoTable />
       <CryptoStats />
     </div>
-
-
-
-
-<!--    <table>-->
-<!--      <thead>-->
-<!--        <tr>-->
-<!--          <th>Name</th>-->
-<!--          <th>Symbol</th>-->
-<!--          <th>Price</th>-->
-<!--          <th>Details</th>-->
-<!--        </tr>-->
-<!--      </thead>-->
-<!--      <tr v-for="currency in data.data" :key="data.data.id">-->
-<!--        <td>{{ currency.name }}</td>-->
-<!--        <td>{{ currency.symbol }}</td>-->
-<!--        <td>{{ currency.price_usd }}</td>-->
-<!--        <td>-->
-<!--          <NuxtLink :to="/currency/ + currency.id">{{ currency.id }}</NuxtLink>-->
-<!--        </td>-->
-<!--      </tr>-->
-<!--    </table>-->
   </main>
 </template>
 

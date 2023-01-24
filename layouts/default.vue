@@ -1,3 +1,7 @@
+<script setup>
+
+</script>
+
 <template>
   <div class="bg-gradient-to-br from-sky-500 to-indigo-600">
     <nav class="grid place-items-center pt-16">
@@ -6,6 +10,7 @@
     <main>
       <slot />
     </main>
+    <TheFooter />
   </div>
 
 </template>
